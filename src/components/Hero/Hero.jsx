@@ -1,19 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button, Containter, MainHeading } from '../../globalStyles';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Button, Container, MainHeading } from "../../globalStyles";
 import {
   HeroVideo,
   HeroSection,
   HeroText,
   ButtonWrapper,
   HeroButton,
-} from './HeroStyles';
+} from "./HeroStyles";
+import mp4 from "../../assets/hero.mp4"
 
 const Hero = () => {
   return (
     <HeroSection>
-      <HeroVideo src="./assets/hero.mp4"/>
-      <Containter>
+      <HeroVideo src={mp4} autoPlay loop muted/>
+      
+      <Container>
         <MainHeading> Your data is secure with us</MainHeading>
         <HeroText>
           We provide the best security systems for clients all over the world
@@ -24,7 +26,7 @@ const Hero = () => {
           </Link>
           <HeroButton>Find More</HeroButton>
         </ButtonWrapper>
-      </Containter>
+      </Container>
     </HeroSection>
   );
 };
