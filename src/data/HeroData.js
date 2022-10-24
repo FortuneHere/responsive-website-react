@@ -1,6 +1,6 @@
 export const heroOne = {
-	reverse: true,
-	inverse: true,
+	reverse: +true,
+	inverse: +true,
 	topLine: {
 		text: 'Founded in 2012',
 	},
@@ -8,13 +8,13 @@ export const heroOne = {
 	description: 'We have designed and implemented the best cloud security solutions',
 	buttonLabel: 'Find More',
 	imgStart: 'start',
-	img: './assets/svg/Deal.svg',
+	img: '../assets/svg/Deal.svg',
 	start: 'true',
 };
 
 export const heroTwo = {
-	reverse: false,
-	inverse: false,
+	reverse: +false,
+	inverse: +false,
 	topLine: {
 		text: 'Designed & Developed',
 	},
@@ -24,13 +24,13 @@ export const heroTwo = {
 
 	linkTo: '/more',
 	imgStart: 'start',
-	img: './assets/svg/Connection.svg',
+	img: '../assets/svg/Connection.svg',
 	start: 'true',
 };
 
 export const heroThree = {
-	reverse: true,
-	inverse: true,
+	reverse: +true,
+	inverse: +true,
 	topLine: {
 		text: 'Highly reputed brand',
 	},
@@ -41,6 +41,6 @@ export const heroThree = {
 
 	linkTo: '/download',
 	imgStart: '',
-	img: './assets/svg/ChartUp.svg',
+	img: '../assets/svg/ChartUp.svg',
 	start: 'true',
 };

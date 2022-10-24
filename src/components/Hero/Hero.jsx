@@ -8,12 +8,12 @@ import {
   ButtonWrapper,
   HeroButton,
 } from "./HeroStyles";
-import mp4 from "../../assets/hero.mp4";
+// import mp4 from "../../assets/hero.mp4";
 
 const Hero = () => {
   return (
     <HeroSection>
-      <HeroVideo src={mp4} autoPlay loop muted />
+      <HeroVideo src="./assets/hero.mp4" autoPlay loop muted />
       <Container>
         <MainHeading> Your data is secure with us</MainHeading>
         <HeroText>

@@ -14,7 +14,7 @@ import {
 } from "./NavbarStyles";
 import { useLocation, useNavigate } from "react-router-dom";
 import { data } from "../../data/NavbarData";
-import png from "../../assets/logo.png";
+// import png from "../../assets/logo.png";
 
 function Navbar() {
   const [show, setShow] = useState(false);
@@ -48,10 +48,12 @@ function Navbar() {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
-            <NavIcon src={png} alt="logo" />
+            <NavIcon src="./assets/logo.png" alt="logo" />
             Delta
           </NavLogo>
-          <MobileIcon onClick={handleClick}>{show ? <FaTimes /> : <CgMenuRight />}</MobileIcon>
+          <MobileIcon onClick={handleClick}>
+            {show ? <FaTimes /> : <CgMenuRight />}
+          </MobileIcon>
           <NavMenu show={show}>
             {data.map((el, index) => (
               <NavItem key={index}>
