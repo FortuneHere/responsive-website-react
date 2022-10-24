@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaRProject, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import { CgMenuRight } from "react-icons/cg";
 import { IconContext } from "react-icons";
 import {
@@ -14,6 +14,7 @@ import {
 } from "./NavbarStyles";
 import { useLocation, useNavigate } from "react-router-dom";
 import { data } from "../../data/NavbarData";
+import png from "../../assets/logo.png";
 
 function Navbar() {
   const [show, setShow] = useState(false);
@@ -38,7 +39,7 @@ function Navbar() {
       scrollTo(id);
     }
 
-    history.push(to);
+    history(to);
     setShow(false);
   };
 
@@ -47,12 +48,11 @@ function Navbar() {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
-            <NavIcon src="../../assets/logo.png" alt="logo">
-              Delta
-            </NavIcon>
+            <NavIcon src={png} alt="logo" />
+            Delta
           </NavLogo>
-          <MobileIcon>{show ? <FaTimes /> : <CgMenuRight />}</MobileIcon>
-          <NavMenu>
+          <MobileIcon onClick={handleClick}>{show ? <FaTimes /> : <CgMenuRight />}</MobileIcon>
+          <NavMenu show={show}>
             {data.map((el, index) => (
               <NavItem key={index}>
                 <NavLinks onClick={() => closeMobileMenu(el.to, el.id)}>

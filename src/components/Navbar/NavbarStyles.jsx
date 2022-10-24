@@ -17,6 +17,7 @@ export const Nav = styled.nav`
 
   transition: background-color 0.3s ease-in;
 `;
+
 export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: start;
