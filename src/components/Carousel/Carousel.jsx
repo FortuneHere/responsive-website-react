@@ -22,7 +22,7 @@ const Carousel = () => {
 					Find more about us
 				</Heading>
 				<ButtonContainer>
-					<IconContext.Provider value={{ size: '3rem', color: '#1d609c' }}>
+					<IconContext.Provider value={{ size: '48px', color: '#1d609c' }}>
 						<FaArrowCircleLeft onClick={sliderRef?.slickPrev} />
 						<FaArrowCircleRight onClick={sliderRef?.slickNext} />
 					</IconContext.Provider>
