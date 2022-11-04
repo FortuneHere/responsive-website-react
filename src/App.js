@@ -9,7 +9,7 @@ import Pricing from "./pages/PricingPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <GlobalStyle />
       <Navbar/>
       <Routes>
