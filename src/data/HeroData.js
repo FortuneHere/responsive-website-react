@@ -8,7 +8,7 @@ export const heroOne = {
 	description: 'We have designed and implemented the best cloud security solutions',
 	buttonLabel: 'Find More',
 	imgStart: 'start',
-	img: '../assets/svg/Deal.svg',
+	img: './assets/svg/Deal.svg',
 	start: 'true',
 };
 
@@ -24,7 +24,7 @@ export const heroTwo = {
 
 	linkTo: '/more',
 	imgStart: 'start',
-	img: '../assets/svg/Connection.svg',
+	img: './assets/svg/Connection.svg',
 	start: 'true',
 };
 
@@ -41,6 +41,6 @@ export const heroThree = {
 
 	linkTo: '/download',
 	imgStart: '',
-	img: '../assets/svg/ChartUp.svg',
+	img: './assets/svg/ChartUp.svg',
 	start: 'true',
 };
