@@ -1,19 +1,24 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Button, Container, MainHeading } from "../../globalStyles";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button, Container, MainHeading } from '../../globalStyles';
 import {
   HeroVideo,
   HeroSection,
   HeroText,
   ButtonWrapper,
   HeroButton,
-} from "./HeroStyles";
+} from './HeroStyles';
 // import mp4 from "../../assets/hero.mp4";
 
 const Hero = () => {
   return (
     <HeroSection>
-      <HeroVideo src="./assets/hero.mp4" autoPlay loop muted />
+      <HeroVideo
+        src={process.env.PUBLIC_URL + '/assets/hero.mp4'}
+        autoPlay
+        loop
+        muted
+      />
       <Container>
         <MainHeading> Your data is secure with us</MainHeading>
         <HeroText>

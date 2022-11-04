@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { FaTimes } from "react-icons/fa";
-import { CgMenuRight } from "react-icons/cg";
-import { IconContext } from "react-icons";
+import React, { useState } from 'react';
+import { FaTimes } from 'react-icons/fa';
+import { CgMenuRight } from 'react-icons/cg';
+import { IconContext } from 'react-icons';
 import {
   Nav,
   NavbarContainer,
@@ -11,9 +11,9 @@ import {
   NavMenu,
   NavLinks,
   NavItem,
-} from "./NavbarStyles";
-import { useLocation, useNavigate } from "react-router-dom";
-import { data } from "../../data/NavbarData";
+} from './NavbarStyles';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { data } from '../../data/NavbarData';
 // import png from "../../assets/logo.png";
 
 function Navbar() {
@@ -30,12 +30,12 @@ function Navbar() {
     const element = document.getElementById(id);
 
     element.scrollIntoView({
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   const closeMobileMenu = (to, id) => {
-    if (id && location.pathname === "/") {
+    if (id && location.pathname === '/') {
       scrollTo(id);
     }
 
@@ -44,11 +44,14 @@ function Navbar() {
   };
 
   return (
-    <IconContext.Provider value={{ color: "#fff" }}>
+    <IconContext.Provider value={{ color: '#fff' }}>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
-            <NavIcon src="./assets/logo.png" alt="logo" />
+            <NavIcon
+              src={process.env.PUBLIC_URL + '/assets/logo.png'}
+              alt="logo"
+            />
             Delta
           </NavLogo>
           <MobileIcon onClick={handleClick}>
