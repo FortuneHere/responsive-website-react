@@ -33,7 +33,7 @@ function Footer() {
               {footerSocialData.map((social, index) => (
                 <FooterSocialIcon
                   key={index}
-                  href="/"
+                  href={process.env.PUBLIC_URL}
                   target="_blank"
                   aria-label={social.name}
                 >
